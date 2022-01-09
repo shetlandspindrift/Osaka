@@ -1,24 +1,24 @@
 # 大阪　ハンズオンセミナー 2022年1月10日
 
 
-リピート病を引き起こす、10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
+リピート病を引き起こす、10箇所のリピート伸長を持つデータ(10-repeat-expansion.maf)を使ってtandem-genotypesを試してみよう！
 
 ## tandem-genotypes
 
 * リードの長さの変化を出力
 
 
-    tandem-genotypes disease-tr.txt chimera.maf > out
+    tandem-genotypes disease-tr.txt 10-repeat-expansion.maf > out
 
 * リード名も出力
 
 
-    tandem-genotypes -v disease-tr.txt chimera.maf > out-v
+    tandem-genotypes -v disease-tr.txt 10-repeat-expansion.maf > out-v
 
 * 2アリルごとの推定を出してくれる
 
 
-    tandem-genotypes -o2 disease-tr.txt chimera.maf > out-o2
+    tandem-genotypes -o2 disease-tr.txt 10-repeat-expansion.maf > out-o2
 
 * ヒストグラムを出してくれる（Rが必要）
 
@@ -33,6 +33,6 @@
 
     lastdb -P8 -uNEAR hg38db GRCh38.fa 
 
-    last-train -P8 hg38db chimera.fa > train.out 
+    last-train -P8 hg38db 10-repeat-expansion.fa > train.out 
 
-    lastal -P8 -p train.out  hg38db chimera.fa | last-split > chimera.maf
+    lastal -P8 -p train.out  hg38db 10-repeat-expansion.fa | last-split > 10-repeat-expansion.maf

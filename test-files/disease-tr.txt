@@ -1,3 +1,4 @@
+#modified from hg38-disease-tr.txt (https://github.com/mcfrith/tandem-genotypes)
 chr3    63912685        63912715        GCA     ATXN7:SCA7      coding
 chr3    129172576       129172656       CAGG    CNBP:DM2        intron
 chr4    3074876 3074939 CAG     HTT:HD  coding
