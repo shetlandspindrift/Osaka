@@ -3,7 +3,7 @@
 
 10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
 
-## tandem-getotypesのテスト
+## tandem-getotypes
 
 * リードの長さの変化を出力
 
