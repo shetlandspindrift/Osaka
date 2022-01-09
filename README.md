@@ -3,7 +3,7 @@
 
 10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
 
-## tandem-getotypes
+## tandem-genotypes
 
 * リードの長さの変化を出力
 
@@ -35,4 +35,4 @@
 
     last-train -P8 hg38db chimera.fa > train.out 
 
-    lastal -P8 -p train.out  hg38db chimera.fa | last-split > out.maf
+    lastal -P8 -p train.out  hg38db chimera.fa | last-split > chimera.maf
