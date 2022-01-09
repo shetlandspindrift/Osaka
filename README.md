@@ -1,7 +1,7 @@
 # 大阪　ハンズオンセミナー 2022年1月10日
 
 
-10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
+リピート病を引き起こす、10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
 
 ## tandem-genotypes
 
