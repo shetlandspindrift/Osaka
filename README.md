@@ -20,9 +20,10 @@
 * ヒストグラムを出してくれる（Rが必要）
 
 
-## リードのアライメント（LASTのインストールが必要です　https://gitlab.com/mcfrith/last）
+## リードのアライメント
 
-* 参照：https://gitlab.com/mcfrith/last/-/blob/main/doc/last-cookbook.rst
+* LASTのインストールが必要です　https://gitlab.com/mcfrith/last
+* 参照ゲノム：https://gitlab.com/mcfrith/last/-/blob/main/doc/last-cookbook.rst
 
 ### hg38をインストール
 
@@ -34,5 +35,6 @@ lastdb -P8 -uNEAR hg38db GRCh38.fa
 
 ### エラー推定とアライメント
 
-last-train -P8 hg38db chimera.fa > train.out
+last-train -P8 hg38db chimera.fa > train.out 
+
 lastal -P8 -p train.out  hg38db chimera.fa | last-split > out.maf
