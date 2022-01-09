@@ -8,20 +8,19 @@
 * リードの長さの変化を出力
 
 
-    tandem-genotypes hg38-disease-tr.txt chimera.maf > out
+    tandem-genotypes disease-tr.txt chimera.maf > out
 
 * リード名も出力
 
 
-    tandem-genotypes -v hg38-disease-tr.txt chimera.maf > out-v
+    tandem-genotypes -v disease-tr.txt chimera.maf > out-v
 
 * 2アリルごとの推定を出してくれる
 
 
-    tandem-genotypes -o2 hg38-disease-tr.txt chimera.maf > out-o2
+    tandem-genotypes -o2 disease-tr.txt chimera.maf > out-o2
 
 * ヒストグラムを出してくれる（Rが必要）
-
 
     tandem-genotypes-plot out 
 
