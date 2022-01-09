@@ -22,7 +22,7 @@
 
 * ヒストグラムを出してくれる（Rが必要）
 
-    tandem-genotypes-plot out 
+    tandem-genotypes-plot out plot
 
 
 ## リードのアライメント
