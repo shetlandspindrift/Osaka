@@ -1,23 +1,26 @@
 # 大阪　ハンズオンセミナー 2022年1月10日
 
 
-## tandem-getotypes commands
+10箇所のリピート伸長を持つデータ(chimera.maf)を使ってtandem-genotypesを試してみよう！
+
+## tandem-getotypesのテスト
+
+* リードの長さの変化を出力
 
     tandem-genotypes hg38-disease-tr.txt chimera.maf > out
 
-* リードの長さの変化が出力される
+* リード名も出力
 
     tandem-genotypes -v hg38-disease-tr.txt chimera.maf > out-v
 
-* リード名が出力される
+* 2アリルごとの推定を出してくれる
 
     tandem-genotypes -o2 hg38-disease-tr.txt chimera.maf > out-o2
 
-* 2アリルごとの推定を出してくれる
+* ヒストグラムを出してくれる（Rが必要）
 
     tandem-genotypes-plot out
     
-* ヒストグラムを出してくれる（Rが必要）
 
 
 ## リードのアライメント
@@ -31,10 +34,10 @@ http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysis
 
 ### 
 
-lastdb -P8 -uNEAR hg38db GRCh38.fa 
+    lastdb -P8 -uNEAR hg38db GRCh38.fa 
 
 ### エラー推定とアライメント
 
-last-train -P8 hg38db chimera.fa > train.out 
+    last-train -P8 hg38db chimera.fa > train.out 
 
-lastal -P8 -p train.out  hg38db chimera.fa | last-split > out.maf
+    lastal -P8 -p train.out  hg38db chimera.fa | last-split > out.maf
