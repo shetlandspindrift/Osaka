@@ -28,10 +28,11 @@
 ## リードのアライメント
 
 * LASTのインストールが必要です　https://gitlab.com/mcfrith/last
-* 参照ゲノム：https://gitlab.com/mcfrith/last/-/blob/main/doc/last-cookbook.rst
+* 参照ゲノム：http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa
+* こちらを参考にしてください：https://gitlab.com/mcfrith/last/-/blob/main/doc/last-cookbook.rst
+* ヒトWGSするにはこちらを読むのもおすすめ: https://github.com/mcfrith/last-rna/blob/master/last-long-reads.md
 
-
-    lastdb -P8 -uNEAR hg38db GRCh38.fa 
+    lastdb -P8 -uNEAR hg38db hg38.analysisSet.fa 
 
     last-train -P8 hg38db 10-repeat-expansion.fa > train.out 
 
