@@ -32,8 +32,8 @@
 * こちらを参考にしてください：https://gitlab.com/mcfrith/last/-/blob/main/doc/last-cookbook.rst
 * ヒトWGSするにはこちらを読むのもおすすめ: https://github.com/mcfrith/last-rna/blob/master/last-long-reads.md
 
-    lastdb -P8 -uNEAR hg38db hg38.analysisSet.fa 
+    lastdb -uNEAR hg38db hg38.analysisSet.fa 
 
-    last-train -P8 hg38db 10-repeat-expansion.fa > train.out 
+    last-train  hg38db 10-repeat-expansion.fa > train.out 
 
-    lastal -P8 -p train.out  hg38db 10-repeat-expansion.fa | last-split > 10-repeat-expansion.maf
+    lastal -p train.out  hg38db 10-repeat-expansion.fa | last-split > 10-repeat-expansion.maf
